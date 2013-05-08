@@ -8,10 +8,9 @@ func fibonacci() func() int {
     a,b := 0, 1
     c := 0
     return func() int {
-        c = a+b
-        a = b
-        b = c
-        return c
+        c = a+b 
+        a, b = b,c
+        return a 
     }
     
 }
