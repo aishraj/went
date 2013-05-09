@@ -22,7 +22,8 @@ func (s String) ServeHTTP(
 func (str Struct) ServeHTTP(
     w http.ResponseWriter,
     r *http.Request) {
-        fmt.Fprintf(w,str.Greeting,str.Punct,str.Who)
+        temp := str.Greeting + str.Punct + str.Who
+        fmt.Fprintf(w,temp)
 }
 
 func main() {
