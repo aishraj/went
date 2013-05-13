@@ -1,4 +1,4 @@
 went
 ====
 
-Baby steps in learning go.
+My first steps in learning Go programming language.
